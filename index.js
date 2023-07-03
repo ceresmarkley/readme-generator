@@ -30,17 +30,14 @@ const promptUser = () => {
     ]);
 };
 
-const generateHTML = ({ name, location, github, linkedIn}) =>
- `<!DOCTYPE html>
- <html lang="en-us">
- 
+function generateReadme(answers) {
 
- </body>`;
+}
 
- const init = () => {
+
+const init = () => {
     promptUser()
-        .then((answers) => writeFile('index.html', generateHTML(answers)))
-        .then(() => console.log('successfully wrote things!'))
+        .then((answers) => writeFile('README.md', generateReadme(answers)))
         .catch((err) => console.log(err));
  };
 

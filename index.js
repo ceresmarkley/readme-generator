@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const { writeFile } = require('fs').promises;
+const fs  = require('fs').promises;
 const generateMarkdown = require('./utils/generateMarkdown');
 
 const questions = [
@@ -26,7 +26,7 @@ const questions = [
         {
             type: 'input',
             name: 'contributing',
-            message: 'Any Contribution Guidelines to Your Cool App? ',
+            message: 'If you have a gofundme or contribution URL please put here.',
         },
         {
             type: 'input',
@@ -36,7 +36,7 @@ const questions = [
         {
             type: 'list',
             name: 'license',
-            message: 'Please Select which license you will be using. ',
+            message: 'Please Select which license you will be using.',
             choices: ['Apache License, Version 2.0',
                 'Common Development and Distribution License 1.0',
                 'Eclipse Public License version 2.0',
@@ -62,10 +62,15 @@ const questions = [
         },
     ];
 
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.log(err) : console.log('Generated Readme.md file!')
+    );
+}
 
 const init = () => {
     inquirer.prompt(questions)
-        .then((answers) => writeFile('README.md', generateMarkdown(answers)))
+        .then((answers) => writeToFile('README.md', generateMarkdown(answers)))
         .catch((err) => console.log(err));
  };
 

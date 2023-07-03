@@ -1,13 +1,47 @@
-// TODO: Include packages needed for this application
+const inquirer = require('inquirer');
 
-// TODO: Create an array of questions for user input
-const questions = [];
+const { writeFile } = require('fs').promises;
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const promptUser = () => {
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is your name?',
+        },
+        {
+            type: 'input',
+            name: 'location',
+            message: 'Where you from?',
+        },
+        {
+            type: 'input',
+            name: 'hobby',
+            message: 'What you like to do?',
+        },{
+            type: 'input',
+            name: 'github',
+            message: 'What is your github?',
+        },{
+            type: 'input',
+            name: 'linkedIn',
+            message: 'What is your linkedin?',
+        },
+    ]);
+};
 
-// TODO: Create a function to initialize app
-function init() {}
+const generateHTML = ({ name, location, github, linkedIn}) =>
+ `<!DOCTYPE html>
+ <html lang="en-us">
+ 
 
-// Function call to initialize app
-init();
+ </body>`;
+
+ const init = () => {
+    promptUser()
+        .then((answers) => writeFile('index.html', generateHTML(answers)))
+        .then(() => console.log('successfully wrote things!'))
+        .catch((err) => console.log(err));
+ };
+
+ init();

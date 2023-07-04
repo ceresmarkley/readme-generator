@@ -64,13 +64,13 @@ const questions = [
 
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-        err ? console.log(err) : console.log('Generated Readme.md file!')
+        err ? console.log(err) : console.log('Success! Readme.md file created!')
     );
 }
 
 const init = () => {
     inquirer.prompt(questions)
-        .then((answers) => writeToFile('README.md', generateMarkdown(answers)))
+        .then((answers) => writeToFile('./utils/README.md', generateMarkdown(answers)))
         .catch((err) => console.log(err));
  };
 

@@ -1,18 +1,16 @@
-# yo
+# README Generator
 
 ![License](https://img.shields.io/badge/License-Apache_License,_Version_2.0-blue)
 
 ## Description 
 
-yo
+An application that will help accept user inputs to create a 'high quality' readme.md file.
 
 ## Table of Contents 
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
+* [Sources](#sources)
 * [Questions](#questions)
 
 ## Installation
@@ -22,10 +20,9 @@ yo
 yo
 
 
-## Contributing
-yo
 
-## Tests
+
+## Sources
 yo
 
 ## License

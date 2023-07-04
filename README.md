@@ -38,7 +38,7 @@ THEN I am taken to the corresponding section of the README
 Inquirer packages are already installed. Version 8.2.4
 
 ## Usage 
-
+https://github.com/ceresmarkley/readme-generator/assets/129554518/efada63c-8d7d-41dc-877b-a755291fd4b3
 
 ## Sources
 Starter Code Provided by EDX bootcamp - https://git.bootcampcontent.com/Ohio-State-University/OSU-VIRT-FSF-PT-04-2023-U-LOLC/-/tree/main/09-NodeJS/02-Challenge/Develop   

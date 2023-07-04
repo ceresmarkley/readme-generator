@@ -1,10 +1,8 @@
-# The Coolest App Ever
-
-![License](https://img.shields.io/badge/License-GNU_Lesser_General_Public_License_version_2.1-blue)
+# Coolest App Ever!
 
 ## Description 
 
-An App for the Coolest People Ever
+A cool App for even Cooler People!
 
 ## Table of Contents 
 
@@ -16,17 +14,17 @@ An App for the Coolest People Ever
 * [Questions](#questions)
 
 ## Installation
-you will need to install npm inquirer Version 8.2.4
+Be Cool! Everything is already installed!
 
 ## Usage 
-You have fun, and stay cool! That easy!
+Chill and vibe, but mostly be cool!
 
 
 ## Contributing
-gofundme.com/coolestappever
+gofundme.com/becool
 
 ## Tests
-coolestappever.com/tests
+becool.com/tests check us out!
 
 ## License
 
@@ -37,7 +35,7 @@ coolestappever.com/tests
 ## Questions
 
 Got a question? Reach me @
-* Email:  gigachad@gmail.com
+* Email:  giga.chad@gmail.com
 * GitHub: [@gigachad16](https://github.com/gigachad16/)
 
 ---

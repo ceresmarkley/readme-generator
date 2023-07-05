@@ -46,7 +46,7 @@ https://github.com/ceresmarkley/readme-generator/assets/129554518/4a37757e-8bdd-
 
 ## Sources
 Starter Code Provided by EDX bootcamp - https://git.bootcampcontent.com/Ohio-State-University/OSU-VIRT-FSF-PT-04-2023-U-LOLC/-/tree/main/09-NodeJS/02-Challenge/Develop   
-Kai Chen (Peer Support) - https://github.com/Ronin1702/readme-generator/tree/main   
+Kai Chen (Peer Support with license functions) - https://github.com/Ronin1702/readme-generator/tree/main   
 Daniel Chen (Peer Support) - https://github.com/CQlove/README-Generator/tree/main   
 
 ---

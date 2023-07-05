@@ -7,12 +7,14 @@ function renderLicenseBadge(license) {
   return '';
 }
 
+// creates function which will be called in 'renderLicenseSection' which will create a URL link to license. 
+// It will return empty string if there is no license
 function renderLicenseLink(license) {
   if (license) {}
-    // return empty string if there is no license
     return '';
 }
 
+// creates license Section for generated readme. If no license is selected then it would return an empty string.
 function renderLicenseSection(license) {
   if (license) {
     return `## License
@@ -21,7 +23,6 @@ function renderLicenseSection(license) {
 
 * For more information, please visit [${license}](${renderLicenseLink(license)}) on [OpenSource Licenses](https://opensource.org/licenses/).`;
   }
-  // return empty string if there is no license
   return '';
 }
 function generateMarkdown(data) {
